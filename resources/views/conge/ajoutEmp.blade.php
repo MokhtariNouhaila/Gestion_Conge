@@ -3,9 +3,13 @@
 
 
 @section('content')
+<style>
+.corps{
+  width: 90%; float:right; background-color:#dddddd;;min-height: 100vh;
+}
+</style>
 
-
-<div  style="width: 90%; float:right; background-color:#dddddd;;min-height: 100vh" >
+<div  class="corps" >
 <h3 class="mx-5 my-4">
 
 Ajouter un employé

@@ -3,24 +3,34 @@
 @section('title', 'dashboard')
  
 @section('content')
-
+<style>
+.cor{
+   width: 90%; float:right; background-color:#dddddd;;min-height: 100vh;
+}
+.wid{
+   width:17%;
+}
+.can{
+   width:46%;height: 300px;
+}
+</style>
 
  
-<div  style="width: 90%; float:right; background-color:#dddddd;;min-height: 100vh" >
+<div  class="cor">
  
-<a style="width:17%;" href="{{ url('/users') }}"  class="btn text-white btn-secondary ml-5 mr-2 my-5 ">
+<a   href="{{ url('/users') }}"  class="wid btn text-white btn-secondary ml-5 mr-2 my-5 ">
   Employees <span class="badge badge-light">{{$info[0]}}</span>
 </a>
-<a style="width:17%;" href="{{ url('conges') }}"  class="btn text-white btn-success mx-2 my-5 ">
+<a  href="{{ url('conges') }}"  class="wid btn text-white btn-success mx-2 my-5 ">
   Demandes <span class="badge badge-light">{{$info[1]}}</span>
 </a>
-<a style="width:17%;" href="{{url('conges/1/etat')}}"  class="btn text-white btn-info mx-2 my-5 ">
+<a  href="{{url('conges/1/etat')}}"  class="wid btn text-white btn-info mx-2 my-5 ">
   Demandes valider <span class="badge badge-light">{{$info[2]}}</span>
 </a>
-<a style="width:17%;"  href="{{url('conges/0/etat')}}" class="btn text-white btn-danger mx-2 my-5 ">
+<a    href="{{url('conges/0/etat')}}" class="wid btn text-white btn-danger mx-2 my-5 ">
   Demandes reffuser <span class="badge badge-light">{{$info[3]}}</span>
 </a>
-<a style="width:17%;"  href="{{url('conges/5/etat')}}"  class="text-white btn btn-warning mx-2 my-5 ">
+<a   href="{{url('conges/5/etat')}}"  class="wid text-white btn btn-warning mx-2 my-5 ">
   Demandes en attend <span class="badge badge-light">{{$info[4]}}</span>
 </a>
 <div   class="mx-5" style="width:70%" >
@@ -59,8 +69,8 @@
             
          </tbody>
       </table>
-<div id="piechart_3d" class="my-5 mr-5 "style=" width:46%;height: 300px;float:right;"></div>
- <div id = "container" class="my-5 ml-5 " style=" width:46%;height: 300px"></div>
+<div id="piechart_3d" class="my-5 mr-5 can"style="float:right;"></div>
+ <div id = "container" class="my-5 ml-5 can " ></div>
  </div>  
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">

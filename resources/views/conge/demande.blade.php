@@ -3,9 +3,17 @@
 @section('title', 'les demandes')
 
 @section('content')
+<style>
+.cop{
+  width: 90%; float:right; background-color:#dddddd;;min-height: 100vh;
+}
+.tabl{
+  
+  width: inherit;background-color:#ffffff;
+}
+</style>
 
-
-<div  style="width: 90%; float:right; background-color:#dddddd;;min-height: 100vh" >
+<div class="cop" >
 <h3 class="mx-5 my-4">
 les Demandes 
 </h3>
@@ -18,9 +26,7 @@ les Demandes
 
 </div>
 
-<table class=" my-3 mx-5 table border-left "style="
-    width: inherit;background-color:#ffffff;
-">
+<table class=" my-3 mx-5 table border-left tabl ">
   <thead class="thead-dark">
     <tr>
       

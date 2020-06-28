@@ -4,8 +4,12 @@
 @section('title', 'modifier')
 @section('content')
 
-
-<div  style="width: 90%; float:right; background-color:#dddddd;;min-height: 100vh" >
+<style>
+.cor{
+  width: 90%; float:right; background-color:#dddddd;;min-height: 100vh;
+}
+</style>
+<div class="cor"  >
 <h3 class="mx-5 my-4">
 
 Modifier un employé
