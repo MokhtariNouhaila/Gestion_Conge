@@ -6,6 +6,8 @@
     <title>CONGE</title>
  </head>
 <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}"> 
+<link rel="icon" type="image/png" href="/icons.png" />
+
 <body class="bg-info " >
     
  

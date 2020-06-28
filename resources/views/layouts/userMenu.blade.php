@@ -6,6 +6,8 @@
     <title>@yield('title') </title>
  </head>
 <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}"> 
+<link rel="icon" type="image/png" href="/icons.png" />
+
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand text-info active" href="{{url('conges')}}">CONGE</a>
